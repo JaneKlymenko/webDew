@@ -1,0 +1,42 @@
+.portfolio-title{
+    margin: 120px 0 0 0;
+    text-align: center;
+    p{
+        font-family: 'Gilroy';
+        font-size: 18px;
+        line-height: 21px;
+        color: #514040;
+        padding: 0 0 30px 0;
+    }
+}
+.portfolio-cards{
+    margin: 80px auto 40px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    .portfolio-card{
+        max-width: 500px;
+        img{
+            max-width: 480px;
+            max-height: 360px;
+        }
+    }
+    .portfolio-card-text{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin: 24px 0 70px 0;
+        a{
+            color: #49AD09;
+            text-decoration: none;
+        }
+    }
+    .portfolio-card-down{
+        margin: 55px 0 0 0;
+    }
+}
+
+.porfolio-button{
+    text-align: center;
+}

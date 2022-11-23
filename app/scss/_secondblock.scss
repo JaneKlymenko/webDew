@@ -1,0 +1,67 @@
+.brands{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0 300px 0;
+    img{
+        height: 26px;
+    }
+}
+
+.what-title{
+    text-align: center;
+    p{
+        font-family: 'Gilroy';
+        font-size: 18px;
+        line-height: 21px;
+        color: #514040;
+        padding: 0 0 30px 0;
+    }
+}
+.what-cards{
+    margin: 80px auto 40px auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 830px;
+    flex-wrap: wrap;
+    .specialization-card{
+        border: 1px solid #EDEDED;
+        border-radius: 5px;
+        padding: 40px 30px 40px 30px;
+        max-width: 384px;
+        margin: 0 0 40px 0;
+        h5{
+            padding-left:40px;
+            padding-bottom: 10px;
+        }
+        &:hover{
+            background: #FFFFFF;
+            border: none;
+            box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1);
+            border-radius: 5px;
+            a{
+                color: #49AD09;
+            }
+        }
+        p{
+            margin: 20px 0;
+            font-family: 'Gilroy';
+            font-size: 18px;
+            line-height: 27px;
+            color: #514040;
+            max-width: 324px;
+        }
+        a{
+            color: #313131;
+        }
+        .webflow{background: url("../img/webflow.png") no-repeat left top;}
+        .shopify{background: url("../img/shopify.png") no-repeat left top;}
+        .figma{background: url("../img/figma.png") no-repeat left top;}
+        .php{background: url("../img/php.png") no-repeat left top;}
+    }
+}
+.what-button{
+    text-align: center;
+    button{
+        width: 225px;
+    }
+}

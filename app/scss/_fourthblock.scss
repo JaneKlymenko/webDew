@@ -1,0 +1,110 @@
+.fourth-window{
+    .owl-carousel{
+        .owl-stage-outer{
+            overflow: visible;
+        }
+    }
+    .owl-item{
+        opacity: 0;
+        transition: all 0.6s ease-out;
+    }
+    .active{
+        opacity: 1;
+        display: block!important;
+        
+    }
+}
+.slider-item{
+    width: 380px;
+    height: 282px;
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(49, 49, 49, 0.1);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 40px 32px;
+    margin: 170px 0 200px 0;
+    h5{
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #32435C;
+    }
+    p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: -0.01em;
+        color: #6A635B;
+        margin: 20px 0 20px 0;
+    }
+    .checked{
+        color: #FBB040;
+        margin: 0 0 20px 0;
+    }
+}
+.portfolio-main{
+    position: relative;
+}
+%sliderbut{
+    width: 50px;
+    height: 50px;
+    background: #FFF;
+    border-radius: 40px;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    &:hover{
+        background-color: #313131!important;
+        box-shadow: 0px 8px 15px rgba(72, 72, 138, 0.08);
+    }
+
+}
+.navigation{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 70px;
+    width: 120px;
+    height: 66px;
+    padding: 3px;
+    border: 5px solid #FFF;
+    background-color: #FFF;
+    left: 50%;
+    top: 500px;
+    transform: translate(-50%, 0);
+    z-index: 3;
+    .owl-prev {
+        @extend %sliderbut;
+        background: url("../img/arr-gr.png") center no-repeat;
+        &:hover{
+            background: url("../img/arr-wt.png") center no-repeat;
+            transform: rotateY(180deg);
+        }
+  }
+    .owl-next {
+        @extend %sliderbut;
+        background: url("../img/arr-gr.png") center no-repeat;
+        transform: rotateY(180deg);
+        &:hover{
+            background: url("../img/arr-wt.png") center no-repeat;
+            transform: none;
+        }
+    }
+}
+
+.bg-customer{
+    position: absolute;
+    width: 892px;
+    height: 540px;
+    left: 50%;
+    top: 80px;
+    transform: translate(-50%, 0);
+    background: #F2F2F2;
+    z-index: -1;
+}
